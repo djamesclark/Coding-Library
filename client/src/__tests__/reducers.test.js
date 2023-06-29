@@ -16,12 +16,12 @@ const initialState = {
   cart: [
     {
       _id: '1',
-      name: 'Soup',
+      name: 'CSS',
       purchaseQuantity: 1
     },
     {
       _id: '2',
-      name: 'Bread',
+      name: 'HTML',
       purchaseQuantity: 2
     }
   ],
