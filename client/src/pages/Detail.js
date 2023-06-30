@@ -85,11 +85,19 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+          <Link to="/" style={{color:'#00adef'}}>← Back to Products</Link>
+          <br/>
 
-          <h2>{currentProduct.name}</h2>
+         
 
-          <p>{currentProduct.description}</p>
+          <img
+            src={`/images/${currentProduct.image}`}
+            alt={currentProduct.name}
+            style={{margin:"20px 0px 0px 0px", boxShadow:'2px 2px 4px lightgrey'}}
+          /> 
+          <h2 style={{color: "#00adef"}}>{currentProduct.name}</h2>
+
+          
 
           <p>
             <strong>Price:</strong>${currentProduct.price}{' '}
@@ -100,12 +108,9 @@ function Detail() {
             >
               Remove from Cart
             </button>
+            <h3>Description:</h3>
+            <p>{currentProduct.description}</p>
           </p>
-
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
