@@ -84,7 +84,7 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div className="container my-1" style={{}}>
           <Link to="/" style={{color:'#00adef'}}>← Back to Products</Link>
           <br/>
 
@@ -101,6 +101,7 @@ function Detail() {
 
           <p>
             <strong>Price:</strong>${currentProduct.price}{' '}
+            <br/>
             <button onClick={addToCart}>Add to Cart!</button>
             <button
               disabled={!cart.find((p) => p._id === currentProduct._id)}
