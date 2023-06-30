@@ -40,19 +40,22 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+    <div className="card px-1 py-1" style={{position: 'relative', paddingBottom: '20px'}}>
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
           src={`/images/${image}`}
+          style={{minHeight:'150px', maxHeight:'200px', minWidth:'170px', maxWidth:'200px'}}
         />
-        <p>{name}</p>
+        <p style={{color:'#00adef', textOverflow: 'ellipsis', whiteSpace:'nowrap',maxWidth:'1000px', overflow:'hidden', display:'block'}}>{name}</p>
       </Link>
+      <div style={{position:'relative', bottom:'0px', left:'0px'}}>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>
+      </div>
     </div>
   );
 }
