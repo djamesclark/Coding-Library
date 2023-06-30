@@ -1,22 +1,30 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #000000;
+  --secondary: #00adef;
+  --tertiary: #2b2b2b;
   --light: #fafafa;
-  --dark: #272f32;
-  --error: rgb(228, 46, 1);
+  --dark: #494949;
+  --error: rgb(252, 128, 97);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
+
 
 * {
   box-sizing: border-box;
 }
 
+
 html,
 body {
   min-height: 100%;
 }
+
+
+.cart {
+  color: var(--light);
+}
+
 
 body {
   margin: 0;
@@ -25,7 +33,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-  color: var(--dark);
+  color: var(--primary);
 }
 
 h1,
@@ -77,11 +85,12 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: #00adef
+  text-decoration-color: #00adef;
 }
 
 header {
   background: var(--primary);
+  height: 100px;
 }
 
 header a {
@@ -89,16 +98,69 @@ header a {
 }
 
 button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
+    appearance: button;
+    background-color: var(--secondary);
+    border: solid transparent;
+    border-radius: 20px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    font-family: din-round,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 30%;
+  }
+
+  .button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button, main,
+  .button:focus {
+    user-select: auto;
+  }
+  
+  .button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button:disabled {
+    cursor: auto;
+  }
+
+
 
 button:hover {
   opacity: .8;
@@ -124,7 +186,7 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--light);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
