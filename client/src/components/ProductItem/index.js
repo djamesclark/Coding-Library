@@ -39,7 +39,7 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1" style={{position: 'relative', paddingBottom: '20px'}}>
+    <div className="card px-1 py-1" style={{position: 'relative', paddingBottom: '20px', boxShadow:'2px 2px 4px lightgrey'}}>
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
