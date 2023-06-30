@@ -10,7 +10,7 @@ function Nav() {
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/orderHistory">
-              Order History
+              Your Order History
             </Link>
           </li>
           <li className="mx-1">
@@ -43,8 +43,8 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          Coding Library
+          <span role="img" aria-label="shopping bag">👽</span>
+          The Coding Library
         </Link>
       </h1>
 
