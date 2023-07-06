@@ -291,7 +291,6 @@ input:focus {
   width: 25%;
   text-align: center;
 }
-
 .error-text {
   color: var(--error);
 }
