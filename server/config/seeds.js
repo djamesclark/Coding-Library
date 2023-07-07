@@ -24,6 +24,7 @@ db.once("open", async () => {
   const products = await Product.insertMany([
     {
       name: "100 Days of Code",
+      author: "Holly Boothroyd",
       description: "A Daily Journal",
       image: "MENTALITY-coding-journal.jpg",
       category: categories[0]._id,
@@ -32,6 +33,7 @@ db.once("open", async () => {
     },
     {
       name: "The Pragmatic Programmer",
+      author: "David Thomas and Andrew Hunt",
       description: "Your Journey to Mastery",
       image: "MENTALITY-the-pragmatic-programmer.jpg",
       category: categories[0]._id,
@@ -40,6 +42,7 @@ db.once("open", async () => {
     },
     {
       name: "The Self-Taught Programmer",
+      author: "Cory Althoff",
       category: categories[0]._id,
       description: "The Definitive Guide to Programming Professionally",
       image: "MENTALITY-the-self-taught-programmer.jpg",
@@ -48,6 +51,7 @@ db.once("open", async () => {
     },
     {
       name: "The Unicorn Project",
+      author: "Gene Kim",
       category: categories[0]._id,
       description:
         "A Novel about Developers, Digital Disruption, and Thriving in the Age of Data",
@@ -57,6 +61,7 @@ db.once("open", async () => {
     },
     {
       name: "Think Like a Programmer",
+      author: "V. Anton Spraul",
       category: categories[0]._id,
       description: "An Introduction to Creative Problem Solving",
       image: "MENTALITY-think-like-a-programmer.jpg",
@@ -65,6 +70,7 @@ db.once("open", async () => {
     },
     {
       name: "Cambridge IGCSE Computer Science",
+      author: "Richard Morgan",
       category: categories[1]._id,
       description: "Programming Book for Microsoft Visual Basic",
       image: "cambridge.jpg",
@@ -73,6 +79,7 @@ db.once("open", async () => {
     },
     {
       name: "Everything You Need to Ace Computer Science and Coding In One Big Fat Book",
+      author: "Workman Publishing",
       category: categories[1]._id,
       description: "The Complete Middle School Study Guide",
       image: "COMPUTER-SCIENCE-everything-you-need-to-ace.jpg",
@@ -81,6 +88,7 @@ db.once("open", async () => {
     },
     {
       name: "A Programmer's Guide to Computer Science",
+      author: "William M. Springer II, PhD",
       category: categories[1]._id,
       description: "A Virtual Degree for the Self-Taught Developer",
       image: "COMPUTER-SCIENCE-programmers-guide-to-computer-science.jpg",
@@ -89,6 +97,7 @@ db.once("open", async () => {
     },
     {
       name: "Programming Machine Learning",
+      author: "Paolo Perrotta",
       category: categories[1]._id,
       description: "From Coding to Deep Learning",
       image: "COMPUTER-SCIENCE-programming-machine-learning.jpg",
@@ -97,6 +106,7 @@ db.once("open", async () => {
     },
     {
       name: "Programming the Universe",
+      author: "Seth Lloyd",
       category: categories[1]._id,
       description: "A Quantum Computer Scientist Takes On The Cosmos",
       image: "COMPUTER-SCIENCE-programming-the-universe.jpg",
@@ -105,6 +115,7 @@ db.once("open", async () => {
     },
     {
       name: "HTML5 and CSS3 All-In-One For Dummies",
+      author: "Andy Harris",
       category: categories[2]._id,
       description: "8 Books in 1",
       image: "HTML-CSS-html-css-for-dummies.jpeg",
@@ -113,6 +124,7 @@ db.once("open", async () => {
     },
     {
       name: "HTML & CSS",
+      author: "Jon Duckett",
       category: categories[2]._id,
       description: "Design and Build Websites",
       image: "HTML-CSS-HTML&CSS-design.jpg",
@@ -121,6 +133,7 @@ db.once("open", async () => {
     },
     {
       name: "Learn to Code HTML & CSS",
+      author: "Shay Howe",
       category: categories[2]._id,
       description: "Develop & Style Websites",
       image: "HTML-CSS-learn-to-code-html-css.jpg",
@@ -129,24 +142,27 @@ db.once("open", async () => {
     },
     {
       name: "Responsive Web Design with HTML 5 & CSS",
+      author: "Jessica Minnick",
       category: categories[2]._id,
       description:
-        "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
+        "A book on how to create professional websites",
       image: "HTML-CSS-responsive-web-design.jpg",
       price: 9.99,
       quantity: 600,
     },
     {
       name: "CSS In Depth",
+      author: "Keith J. Grant",
       category: categories[3]._id,
       description:
-        "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
+        "Learn creative CSS techniques",
       image: "ADVANCED-CSS-css-in-depth.jpg",
       price: 9.99,
       quantity: 600,
     },
     {
       name: "CSS Master Third Edition",
+      author: "Tiffany B. Brown",
       category: categories[3]._id,
       description: "Organized. Efficient. Powerful-CSS Done Right!",
       image: "ADVANCED-CSS-css-master.jpg",
@@ -155,6 +171,7 @@ db.once("open", async () => {
     },
     {
       name: "CSS The Definitive Edition",
+      author: "Eric A. Meyer and Estelle Weyl",
       category: categories[3]._id,
       description: "Visual Presentation For The Web",
       image: "ADVANCED-CSS-css-the-definitive-guide.jpg",
@@ -163,6 +180,7 @@ db.once("open", async () => {
     },
     {
       name: "Modern CSS",
+      author: "Joe Attardi",
       category: categories[3]._id,
       description: "Master the Key Concepts of CSS for Modern Web Development",
       image: "ADVANCED-CSS-modern-css.jpg",
@@ -171,6 +189,7 @@ db.once("open", async () => {
     },
     {
       name: "Pro CSS Techniques",
+      author: "Jeff Croft, Ian Lloyd, and Dan Rubin",
       category: categories[3]._id,
       description: "Real-World CSS Techniques for Real-World CSS Professionals",
       image: "ADVANCED-CSS-pro-css-techniques.jpg",
@@ -179,6 +198,7 @@ db.once("open", async () => {
     },
     {
       name: "Coding with JavaScript for Dummies",
+      author: "Chris Minnick and Eva Holland",
       category: categories[4]._id,
       description:
         "Go From No Coding Experience to Knowing Your Way Around With JavaScript",
@@ -188,6 +208,7 @@ db.once("open", async () => {
     },
     {
       name: "Eloquent JavaScript Third Edition",
+      author: "Marjin Haverbeke",
       category: categories[4]._id,
       description: "A modern Introduction to Programming",
       image: "JAVASCRIPT-eloquent-javascript.jpg",
@@ -196,6 +217,7 @@ db.once("open", async () => {
     },
     {
       name: "JavaScript from Beginner to Professional",
+      author: "Laurence Lars Svekis, Maaike van Putten, and Rob Percival",
       category: categories[4]._id,
       description:
         "Learn JavaScript quickly by building fun, interactive, and dynamic web apps, games, and pages",
@@ -205,6 +227,7 @@ db.once("open", async () => {
     },
     {
       name: "JavaScript The Comprehensive Guide",
+      author: "Phillip Ackermann",
       category: categories[4]._id,
       description:
         "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
@@ -214,6 +237,7 @@ db.once("open", async () => {
     },
     {
       name: "JavaScript The Definitive Guide",
+      author: "David Flanagan",
       category: categories[4]._id,
       description: "Master The World's Most-Used Programming Language",
       image: "JAVASCRIPT-JavaScript-the-definitive-guide.jpg",
@@ -222,6 +246,7 @@ db.once("open", async () => {
     },
     {
       name: "API Fundamentals: An Easy Hands on Workbook for Beginners",
+      author: "Pallavi Agarwal",
       category: categories[5]._id,
       description: "For Product Managers & Everyone Else",
       image: "APIS-api-fundamentals.jpg",
@@ -230,6 +255,7 @@ db.once("open", async () => {
     },
     {
       name: "APIs",
+      author: "Daniel Jacobson, Greg Brail, and Dan Woods",
       category: categories[5]._id,
       description: "A Strategy Guide",
       image: "APIS-apis-a-strategy-guide.jpg",
@@ -238,6 +264,7 @@ db.once("open", async () => {
     },
     {
       name: "Build APIs You Won't Hate",
+      author: "Phil Sturgeon",
       category: categories[5]._id,
       description:
         "Everyone and Their Dog Wants an API, So You Should Probably Learn How to Build One",
@@ -247,6 +274,7 @@ db.once("open", async () => {
     },
     {
       name: "Mastering API Architecture",
+      author: "James Gough, Daniel Bryant, and Matthew Auburn",
       category: categories[5]._id,
       description: "Design, Operate, and Evolve API-Based Systems",
       image: "APIS-mastering-api-architecture.jpg",
@@ -255,6 +283,7 @@ db.once("open", async () => {
     },
     {
       name: "Beginning Node,js, Express & MongoDB Development",
+      author: "Greg Lim",
       category: categories[6]._id,
       description: "node.js, express mongoDB",
       image: "NODE-EXPRESS-beginning-nodejs-express-mongodb.jpg",
@@ -263,6 +292,7 @@ db.once("open", async () => {
     },
     {
       name: "Express in Action",
+      author: "Evan M. Hahn",
       category: categories[6]._id,
       description: "Writing, building, and testing Node.js applications",
       image: "NODE-EXPRESS-express-in-action.jpg",
@@ -271,6 +301,7 @@ db.once("open", async () => {
     },
     {
       name: "Get Programming with Node.js",
+      author: "Jonathan Wexler",
       category: categories[6]._id,
       description:
         "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
@@ -280,6 +311,7 @@ db.once("open", async () => {
     },
     {
       name: "Node.js Easy Exercises",
+      author: "Tony de Araujo",
       category: categories[6]._id,
       description: "Simple Page Navigation with Express",
       image: "NODE-EXPRESS-node.js-easy-exercises.jpg",
@@ -288,6 +320,7 @@ db.once("open", async () => {
     },
     {
       name: "Web Development with Node & Express",
+      author: "Ethan Brown",
       category: categories[6]._id,
       description: "Leveraging The JavaScript Stack",
       image: "NODE-EXPRESS-web-dev-with-node-express-1st-edition.jpg",
@@ -296,6 +329,7 @@ db.once("open", async () => {
     },
     {
       name: "Learn SQL DataBase Programming",
+      author: "Josephine Bush",
       category: categories[7]._id,
       description:
         "Query and manipulate databases from popular relational database servers using SQL",
@@ -305,6 +339,7 @@ db.once("open", async () => {
     },
     {
       name: "NoSQL AND SQL Data Modeling",
+      author: "Ted Hills",
       category: categories[7]._id,
       description: "Bringing Together Data, Semantics, and Software",
       image: "SQL-NOSQL-nosql-sql-data-modeling.jpg",
@@ -313,6 +348,7 @@ db.once("open", async () => {
     },
     {
       name: "Practice SQL",
+      author: "Anthony DeBarros",
       category: categories[7]._id,
       description: "A Beginner;s Guide To Storytelling With Data",
       image: "SQL-NOSQL-practical-sql.jpg",
@@ -321,6 +357,7 @@ db.once("open", async () => {
     },
     {
       name: "SQL For Smarties",
+      author: "Joe Clelko",
       category: categories[7]._id,
       description: "Advanced SQL Programming",
       image: "SQL-NOSQL-sql-for-smarties.jpg",
@@ -329,6 +366,7 @@ db.once("open", async () => {
     },
     {
       name: "SQL and NoSQL Databases",
+      author: "Andreas Meier and Michael Kaufmann",
       category: categories[7]._id,
       description:
         "Models, Languages, Consistency Options and Architectures for Big Data Management",
@@ -338,6 +376,7 @@ db.once("open", async () => {
     },
     {
       name: "Full Stack React",
+      author: "Anthony Accomazzo, Clay Allsopp, Tyler McGinnis, Ari Lerner, David Guttman, and Nate Murray",
       category: categories[8]._id,
       description: "The Complete Guide to ReactJS and Friends",
       image: "REACT-fullstack-react.jpg",
@@ -346,6 +385,7 @@ db.once("open", async () => {
     },
     {
       name: "Learning React",
+      author: "Alex Banks and Eve Porcello",
       category: categories[8]._id,
       description: "Modern Patterns for Developing React Apps",
       image: "REACT-learning-react.jpg",
@@ -353,8 +393,9 @@ db.once("open", async () => {
       quantity: 600,
     },
     {
-      category: categories[8]._id,
       name: "React Design Patterns and Best Practices",
+      author: "Carlos Santana Roldan",
+      category: categories[8]._id,
       description:
         "Design, build and deploy production-ready web applications using standard industry practices",
       image: "REACT-react-design-patterns-best-practices.jpg",
@@ -363,15 +404,17 @@ db.once("open", async () => {
     },
     {
       name: "React Explained",
+      author: "Zac Gordon",
       category: categories[8]._id,
       description:
-        "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
+        "An introduction to React",
       image: "REACT-react-explained.jpg",
       price: 9.99,
       quantity: 600,
     },
     {
       name: "The Road to React",
+      author: "Robin Wieruch",
       category: categories[8]._id,
       description: "2023 Edition with React 18 and React Hooks",
       image: "REACT-the-road-to-react.jpg",
@@ -380,6 +423,7 @@ db.once("open", async () => {
     },
     {
       name: "Full Stack Web Development For Beginners",
+      author: "Riaz Ahmed",
       category: categories[9]._id,
       description: "HTML, CSS, Bootstrap, JavaScript, PHP, MySQL",
       image: "FULL-STACK-fs-web-development-for-beginners.jpg",
@@ -388,6 +432,7 @@ db.once("open", async () => {
     },
     {
       name: "Full Stack Web Development",
+      author: "Sammie Smith",
       category: categories[9]._id,
       description:
         "Everything Beginners to Expert Guide on Modern Full-Stack Web Development Using Modern Web Development Tools",
@@ -397,6 +442,7 @@ db.once("open", async () => {
     },
     {
       name: "Full Stack Rust",
+      author: "Andrew Weiss",
       category: categories[9]._id,
       description:
         "The Complete Guide to Building Apps with the Rust Programming Language and Friends",
@@ -406,6 +452,7 @@ db.once("open", async () => {
     },
     {
       name: "Modern Full-Stack Development",
+      author: "Frank Zammetti",
       category: categories[9]._id,
       description: "Using TypeScript, React, Node.js, Webpack and Docker",
       image: "FULL-STACK-modern-fs-development.jpg",
@@ -414,6 +461,7 @@ db.once("open", async () => {
     },
     {
       name: "The Full Stack Developer",
+      author: "Chris Northwood",
       category: categories[9]._id,
       description:
         "Your Essential Guide to the Everyday Skills Expected of a Modern Full Stack Web Developer",
