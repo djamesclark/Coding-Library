@@ -28,7 +28,7 @@ db.once("open", async () => {
       description: "A Daily Journal",
       image: "MENTALITY-coding-journal.jpg",
       category: categories[0]._id,
-      price: 2.99,
+      price: 15.00,
       quantity: 500,
     },
     {
@@ -37,7 +37,7 @@ db.once("open", async () => {
       description: "Your Journey to Mastery",
       image: "MENTALITY-the-pragmatic-programmer.jpg",
       category: categories[0]._id,
-      price: 1.99,
+      price: 39.99,
       quantity: 500,
     },
     {
@@ -46,7 +46,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description: "The Definitive Guide to Programming Professionally",
       image: "MENTALITY-the-self-taught-programmer.jpg",
-      price: 7.99,
+      price: 19.68,
       quantity: 20,
     },
     {
@@ -56,7 +56,7 @@ db.once("open", async () => {
       description:
         "A Novel about Developers, Digital Disruption, and Thriving in the Age of Data",
       image: "MENTALITY-the-unicorn-project.jpg",
-      price: 3.99,
+      price: 26.99,
       quantity: 50,
     },
     {
@@ -65,7 +65,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description: "An Introduction to Creative Problem Solving",
       image: "MENTALITY-think-like-a-programmer.jpg",
-      price: 14.99,
+      price: 19.89,
       quantity: 100,
     },
     {
@@ -74,7 +74,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "Programming Book for Microsoft Visual Basic",
       image: "cambridge.jpg",
-      price: 399.99,
+      price: 33.70,
       quantity: 30,
     },
     {
@@ -83,7 +83,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "The Complete Middle School Study Guide",
       image: "COMPUTER-SCIENCE-everything-you-need-to-ace.jpg",
-      price: 199.99,
+      price: 10.99,
       quantity: 30,
     },
     {
@@ -92,7 +92,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "A Virtual Degree for the Self-Taught Developer",
       image: "COMPUTER-SCIENCE-programmers-guide-to-computer-science.jpg",
-      price: 9.99,
+      price: 26.99,
       quantity: 100,
     },
     {
@@ -101,7 +101,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "From Coding to Deep Learning",
       image: "COMPUTER-SCIENCE-programming-machine-learning.jpg",
-      price: 1.99,
+      price: 38.49,
       quantity: 1000,
     },
     {
@@ -110,7 +110,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "A Quantum Computer Scientist Takes On The Cosmos",
       image: "COMPUTER-SCIENCE-programming-the-universe.jpg",
-      price: 2.99,
+      price: 15.20,
       quantity: 1000,
     },
     {
@@ -119,7 +119,7 @@ db.once("open", async () => {
       category: categories[2]._id,
       description: "8 Books in 1",
       image: "HTML-CSS-html-css-for-dummies.jpeg",
-      price: 7.99,
+      price: 27.99,
       quantity: 100,
     },
     {
@@ -128,7 +128,7 @@ db.once("open", async () => {
       category: categories[2]._id,
       description: "Design and Build Websites",
       image: "HTML-CSS-HTML&CSS-design.jpg",
-      price: 9.99,
+      price: 17.99,
       quantity: 600,
     },
     {
@@ -137,7 +137,7 @@ db.once("open", async () => {
       category: categories[2]._id,
       description: "Develop & Style Websites",
       image: "HTML-CSS-learn-to-code-html-css.jpg",
-      price: 9.99,
+      price: 30.62,
       quantity: 600,
     },
     {
@@ -147,7 +147,7 @@ db.once("open", async () => {
       description:
         "A book on how to create professional websites",
       image: "HTML-CSS-responsive-web-design.jpg",
-      price: 9.99,
+      price: 90.79,
       quantity: 600,
     },
     {
@@ -157,7 +157,7 @@ db.once("open", async () => {
       description:
         "Learn creative CSS techniques",
       image: "ADVANCED-CSS-css-in-depth.jpg",
-      price: 9.99,
+      price: 44.99,
       quantity: 600,
     },
     {
@@ -166,7 +166,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description: "Organized. Efficient. Powerful-CSS Done Right!",
       image: "ADVANCED-CSS-css-master.jpg",
-      price: 9.99,
+      price: 30.95,
       quantity: 600,
     },
     {
@@ -175,7 +175,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description: "Visual Presentation For The Web",
       image: "ADVANCED-CSS-css-the-definitive-guide.jpg",
-      price: 9.99,
+      price: 69.99,
       quantity: 600,
     },
     {
@@ -184,7 +184,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description: "Master the Key Concepts of CSS for Modern Web Development",
       image: "ADVANCED-CSS-modern-css.jpg",
-      price: 9.99,
+      price: 19.29,
       quantity: 600,
     },
     {
@@ -193,7 +193,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description: "Real-World CSS Techniques for Real-World CSS Professionals",
       image: "ADVANCED-CSS-pro-css-techniques.jpg",
-      price: 9.99,
+      price: 39.99,
       quantity: 600,
     },
     {
@@ -203,7 +203,7 @@ db.once("open", async () => {
       description:
         "Go From No Coding Experience to Knowing Your Way Around With JavaScript",
       image: "JAVASCRIPT-coding-javascript-for-dummies.jpg",
-      price: 9.99,
+      price: 34.99,
       quantity: 600,
     },
     {
@@ -212,7 +212,7 @@ db.once("open", async () => {
       category: categories[4]._id,
       description: "A modern Introduction to Programming",
       image: "JAVASCRIPT-eloquent-javascript.jpg",
-      price: 9.99,
+      price: 20.52,
       quantity: 600,
     },
     {
@@ -222,7 +222,7 @@ db.once("open", async () => {
       description:
         "Learn JavaScript quickly by building fun, interactive, and dynamic web apps, games, and pages",
       image: "JAVASCRIPT-JavaScript-from-beginner-to-professional.jpg",
-      price: 9.99,
+      price: 32.29,
       quantity: 600,
     },
     {
@@ -232,7 +232,7 @@ db.once("open", async () => {
       description:
         "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
       image: "JAVASCRIPT-JavaScript-the-comprehensive-guide.jpg",
-      price: 9.99,
+      price: 48.81,
       quantity: 600,
     },
     {
@@ -241,7 +241,7 @@ db.once("open", async () => {
       category: categories[4]._id,
       description: "Master The World's Most-Used Programming Language",
       image: "JAVASCRIPT-JavaScript-the-definitive-guide.jpg",
-      price: 9.99,
+      price: 38.49,
       quantity: 600,
     },
     {
@@ -250,16 +250,16 @@ db.once("open", async () => {
       category: categories[5]._id,
       description: "For Product Managers & Everyone Else",
       image: "APIS-api-fundamentals.jpg",
-      price: 9.99,
+      price: 15.99,
       quantity: 600,
     },
     {
-      name: "APIs",
+      name: "APIs A Strategy Guide",
       author: "Daniel Jacobson, Greg Brail, and Dan Woods",
       category: categories[5]._id,
       description: "A Strategy Guide",
       image: "APIS-apis-a-strategy-guide.jpg",
-      price: 9.99,
+      price: 24.99,
       quantity: 600,
     },
     {
@@ -269,7 +269,7 @@ db.once("open", async () => {
       description:
         "Everyone and Their Dog Wants an API, So You Should Probably Learn How to Build One",
       image: "APIS-build-apis-you-wont-hate.jpg",
-      price: 9.99,
+      price: 28.99,
       quantity: 600,
     },
     {
@@ -278,7 +278,7 @@ db.once("open", async () => {
       category: categories[5]._id,
       description: "Design, Operate, and Evolve API-Based Systems",
       image: "APIS-mastering-api-architecture.jpg",
-      price: 9.99,
+      price: 45.99,
       quantity: 600,
     },
     {
@@ -287,7 +287,7 @@ db.once("open", async () => {
       category: categories[6]._id,
       description: "node.js, express mongoDB",
       image: "NODE-EXPRESS-beginning-nodejs-express-mongodb.jpg",
-      price: 9.99,
+      price: 17.99,
       quantity: 600,
     },
     {
@@ -296,7 +296,7 @@ db.once("open", async () => {
       category: categories[6]._id,
       description: "Writing, building, and testing Node.js applications",
       image: "NODE-EXPRESS-express-in-action.jpg",
-      price: 9.99,
+      price: 35.47,
       quantity: 600,
     },
     {
@@ -306,7 +306,7 @@ db.once("open", async () => {
       description:
         "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
       image: "NODE-EXPRESS-get-programming-with-nodejs.jpg",
-      price: 9.99,
+      price: 49.99,
       quantity: 600,
     },
     {
@@ -315,7 +315,7 @@ db.once("open", async () => {
       category: categories[6]._id,
       description: "Simple Page Navigation with Express",
       image: "NODE-EXPRESS-node.js-easy-exercises.jpg",
-      price: 9.99,
+      price: 10.99,
       quantity: 600,
     },
     {
@@ -324,7 +324,7 @@ db.once("open", async () => {
       category: categories[6]._id,
       description: "Leveraging The JavaScript Stack",
       image: "NODE-EXPRESS-web-dev-with-node-express-1st-edition.jpg",
-      price: 9.99,
+      price: 31.49,
       quantity: 600,
     },
     {
@@ -334,7 +334,7 @@ db.once("open", async () => {
       description:
         "Query and manipulate databases from popular relational database servers using SQL",
       image: "SQL-NOSQL-learn-sql-db-programming.jpg",
-      price: 9.99,
+      price: 39.99,
       quantity: 600,
     },
     {
@@ -343,16 +343,16 @@ db.once("open", async () => {
       category: categories[7]._id,
       description: "Bringing Together Data, Semantics, and Software",
       image: "SQL-NOSQL-nosql-sql-data-modeling.jpg",
-      price: 9.99,
+      price: 22.07,
       quantity: 600,
     },
     {
-      name: "Practice SQL",
+      name: "Practical SQL",
       author: "Anthony DeBarros",
       category: categories[7]._id,
       description: "A Beginner;s Guide To Storytelling With Data",
       image: "SQL-NOSQL-practical-sql.jpg",
-      price: 9.99,
+      price: 27.99,
       quantity: 600,
     },
     {
@@ -361,7 +361,7 @@ db.once("open", async () => {
       category: categories[7]._id,
       description: "Advanced SQL Programming",
       image: "SQL-NOSQL-sql-for-smarties.jpg",
-      price: 9.99,
+      price: 53.53,
       quantity: 600,
     },
     {
@@ -371,16 +371,16 @@ db.once("open", async () => {
       description:
         "Models, Languages, Consistency Options and Architectures for Big Data Management",
       image: "SQL-NOSQL-sql-nosql-databases.jpg",
-      price: 9.99,
+      price: 54.99,
       quantity: 600,
     },
     {
-      name: "Full Stack React",
+      name: "Full Stack React: The Complete Guide to ReactJS and Friends",
       author: "Anthony Accomazzo, Clay Allsopp, Tyler McGinnis, Ari Lerner, David Guttman, and Nate Murray",
       category: categories[8]._id,
       description: "The Complete Guide to ReactJS and Friends",
       image: "REACT-fullstack-react.jpg",
-      price: 9.99,
+      price: 59.99,
       quantity: 600,
     },
     {
@@ -389,7 +389,7 @@ db.once("open", async () => {
       category: categories[8]._id,
       description: "Modern Patterns for Developing React Apps",
       image: "REACT-learning-react.jpg",
-      price: 9.99,
+      price: 30.21,
       quantity: 600,
     },
     {
@@ -399,7 +399,7 @@ db.once("open", async () => {
       description:
         "Design, build and deploy production-ready web applications using standard industry practices",
       image: "REACT-react-design-patterns-best-practices.jpg",
-      price: 9.99,
+      price: 41.99,
       quantity: 600,
     },
     {
@@ -409,7 +409,7 @@ db.once("open", async () => {
       description:
         "An introduction to React",
       image: "REACT-react-explained.jpg",
-      price: 9.99,
+      price: 24.99,
       quantity: 600,
     },
     {
@@ -418,7 +418,7 @@ db.once("open", async () => {
       category: categories[8]._id,
       description: "2023 Edition with React 18 and React Hooks",
       image: "REACT-the-road-to-react.jpg",
-      price: 9.99,
+      price: 29.99,
       quantity: 600,
     },
     {
@@ -437,17 +437,17 @@ db.once("open", async () => {
       description:
         "Everything Beginners to Expert Guide on Modern Full-Stack Web Development Using Modern Web Development Tools",
       image: "FULL-STACK-full-stack-web-development.jpg",
-      price: 9.99,
+      price: 35.00,
       quantity: 600,
     },
     {
-      name: "Full Stack Rust",
+      name: "FullStack Rust: The Complete Guide to Building Apps with the Rust Programming Language and Friends",
       author: "Andrew Weiss",
       category: categories[9]._id,
       description:
         "The Complete Guide to Building Apps with the Rust Programming Language and Friends",
       image: "FULL-STACK-fullstack-rust.jpg",
-      price: 9.99,
+      price: 79.00,
       quantity: 600,
     },
     {
@@ -456,7 +456,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Using TypeScript, React, Node.js, Webpack and Docker",
       image: "FULL-STACK-modern-fs-development.jpg",
-      price: 9.99,
+      price: 38.20,
       quantity: 600,
     },
     {
@@ -466,7 +466,7 @@ db.once("open", async () => {
       description:
         "Your Essential Guide to the Everyday Skills Expected of a Modern Full Stack Web Developer",
       image: "FULL-STACK-the-fs-developer.jpg",
-      price: 9.99,
+      price: 41.40,
       quantity: 600,
     },
   ]);
