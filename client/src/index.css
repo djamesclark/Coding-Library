@@ -202,7 +202,10 @@ button:hover {
 
 
 img {
-  max-width: 100%;
+  max-width: 90px;
+}
+.imagewords {
+  max-width: 300px;
 }
 
 span[role="img"] {

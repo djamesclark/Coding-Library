@@ -1,9 +1,9 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/logo-coding-library.png"
+import words from "../../assets/coding-library-words.png"
 function Nav() {
-
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -23,6 +23,7 @@ function Nav() {
       );
     } else {
       return (
+        <div>
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/signup">
@@ -35,24 +36,22 @@ function Nav() {
             </Link>
           </li>
         </ul>
+        </div>
       );
     }
   }
-
   return (
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">👽</span>
-          The Coding Library
+        <img src={logo} alt="Logo" />
+        <img src={words} alt="the coding library" className="imagewords" />
         </Link>
       </h1>
-
       <nav>
         {showNavigation()}
       </nav>
     </header>
   );
 }
-
 export default Nav;
