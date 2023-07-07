@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { pluralize } from "../../utils/helpers"
+import { pluralize } from "../../utils/helpers";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
@@ -8,52 +8,76 @@ import { idbPromise } from "../../utils/helpers";
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
-  const {
-    image,
-    name,
-    _id,
-    price
-  } = item;
+  const { image, name, _id, price } = item;
 
-  const { cart } = state
+  const { cart } = state;
 
   const addToCart = () => {
-    const itemInCart = cart.find((cartItem) => cartItem._id === _id)
+    const itemInCart = cart.find((cartItem) => cartItem._id === _id);
     if (itemInCart) {
       dispatch({
         type: UPDATE_CART_QUANTITY,
         _id: _id,
-        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
       });
-      idbPromise('cart', 'put', {
+      idbPromise("cart", "put", {
         ...itemInCart,
-        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
       });
     } else {
       dispatch({
         type: ADD_TO_CART,
-        product: { ...item, purchaseQuantity: 1 }
+        product: { ...item, purchaseQuantity: 1 },
       });
-      idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
+      idbPromise("cart", "put", { ...item, purchaseQuantity: 1 });
     }
-  }
+  };
 
   return (
-    <div className="card px-1 py-1" style={{position: 'relative', paddingBottom: '20px', boxShadow:'2px 2px 4px lightgrey'}}>
+    <div
+      className="card px-1 py-1"
+      style={{
+        position: "relative",
+        paddingBottom: "20px",
+        boxShadow: "2px 2px 4px grey",
+      }}
+      onMouseOver={(e) => {
+        e.currentTarget.style.boxShadow = "2px 2px 4px black";
+      }}
+      onMouseOut={(e) => {
+        e.currentTarget.style.boxShadow = "2px 2px 4px grey";
+      }}
+    >
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
           src={`/images/${image}`}
-          style={{minHeight:'150px', maxHeight:'200px', minWidth:'170px', maxWidth:'200px'}}
+          style={{
+            minHeight: "150px",
+            maxHeight: "200px",
+            minWidth: "170px",
+            maxWidth: "200px",
+          }}
         />
-        <p style={{color:'#00adef', textOverflow: 'ellipsis', whiteSpace:'nowrap',maxWidth:'1000px', overflow:'hidden', display:'block'}}>{name}</p>
+        <p
+          style={{
+            color: "#00adef",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            maxWidth: "1000px",
+            overflow: "hidden",
+            display: "block",
+          }}
+        >
+          {name}
+        </p>
       </Link>
-      <div style={{position:'relative', bottom:'0px', left:'0px'}}>
-      <div>
-        {/* <div>{quantity} {pluralize("item", quantity)} in stock</div> */}
-        <span>${price}</span>
-      </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <div style={{ position: "relative", bottom: "0px", left: "0px" }}>
+        <div>
+          {/* <div>{quantity} {pluralize("item", quantity)} in stock</div> */}
+          <span>${price}</span>
+        </div>
+        <button onClick={addToCart}>Add to cart</button>
       </div>
     </div>
   );

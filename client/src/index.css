@@ -202,6 +202,7 @@ button:hover {
 
 
 img {
+  padding-top: 10px;
   max-width: 90px;
 }
 .imagewords {
@@ -253,6 +254,7 @@ input:focus {
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
+  padding-top: 25px;
 }
 
 .mx-2 {
