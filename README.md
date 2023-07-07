@@ -21,7 +21,7 @@ Welcome to Coding Library, your ultimate destination for all things coding! We a
 [![Node.js](https://img.shields.io/badge/Node.js-v14.17.0-green)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-v4.17.1-lightgrey)](https://expressjs.com/)
 [![Heroku](https://img.shields.io/badge/Heroku-deployed-purple)](https://www.heroku.com/)
-[![React](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)](https://react.dev/)
+[![React](https://img.shields.io/badge/React-v16.13.1-61DAFB)](https://react.dev/)
 
 
 ## Installation
@@ -35,7 +35,7 @@ Please follow these steps to install and run the project on your local machine:
 ## Usage
   
 To use this project, follow these steps:
-1. Go to the site and create an account: www.putasporkinit.co/
+1. Go to the site and create an account
 2. Choose a Book Category 
 3. Add any of the following books that you want to buy
 4. When your ready hit checkout 
