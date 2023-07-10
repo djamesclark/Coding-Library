@@ -88,27 +88,28 @@ function Detail() {
           <Link to="/" style={{color:'#00adef'}}>← Back to Products</Link>
           <br/>
 
-         
-
-          <img
+          <img className="indbookimg"
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
             style={{margin:"20px 0px 0px 0px", boxShadow:'2px 2px 4px lightgrey'}}
           /> 
           <h2 style={{color: "#00adef"}}>{currentProduct.name}</h2>
 
-          
-
           <p>
             <strong>Price:</strong>${currentProduct.price}{' '}
             <br/>
+            <div className= "addbtn" >
             <button onClick={addToCart}>Add to Cart!</button>
+            </div>
+            <div className="removebtn">
             <button
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
             </button>
+            </div>
+            <br/>
             <h3>Description:</h3>
             <p>{currentProduct.description}</p>
           </p>
