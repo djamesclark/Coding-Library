@@ -64,4 +64,4 @@ Team: [djamesclark](https://github.com/djamesclark), [Alphastranger](https://git
 [![MIT](https://img.shields.io/badge/MIT-License-red)](https://www.mit.edu/~amini/LICENSE.md)
 ## Questions
 
-If you have any questions or issues, feel free to reach out to us via my GitHub repo: [Coding-Library](https://github.com/djamesclark/Coding-Library)
+If you have any questions or issues, feel free to reach out to us via our GitHub repo: [Coding-Library](https://github.com/djamesclark/Coding-Library)
