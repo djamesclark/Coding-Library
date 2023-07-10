@@ -258,6 +258,33 @@ input:focus {
 .my-1 {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* for individual books/products page */
+.addbtn {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.removebtn {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.indbookimg {
+  max-width: 300px;
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.indbookimg:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .my-2 {
