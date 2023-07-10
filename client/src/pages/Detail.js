@@ -100,6 +100,8 @@ function Detail() {
           
 
           <p>
+            <strong>Written By:</strong> {currentProduct.author}
+            <br/>
             <strong>Price:</strong>${currentProduct.price}{' '}
             <br/>
             <button onClick={addToCart}>Add to Cart!</button>

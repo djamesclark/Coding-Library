@@ -5,6 +5,7 @@ export const QUERY_PRODUCTS = gql`
     products(category: $category) {
       _id
       name
+      author
       description
       price
       image
