@@ -28,8 +28,9 @@ Welcome to Coding Library, your ultimate destination for all things coding! We a
 
 Please follow these steps to install and run the project on your local machine:
 
-1. You will need to run `npm i` to install project dependencies.
-2. 
+1. Clone this repository
+2. You will need to run `npm i` in the root directory to install project dependencies.
+3. You will need to run `npm run develop` to start the application.
 
   
 ## Usage
@@ -50,6 +51,7 @@ This project is not currently open for contributions.
 ## Tests
 
 To run tests on this project, follow these steps:
+You will need to run `npm test`
 
   
 ## Project Links
