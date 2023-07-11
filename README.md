@@ -29,7 +29,8 @@ Welcome to Coding Library, your ultimate destination for all things coding! We a
 Please follow these steps to install and run the project on your local machine:
 
 1. You will need to run `npm i` to install project dependencies.
-2. 
+2. Then run `npm run seed` to seed all of the products.
+3. After that run `npm run develop` to start the application and that will also open up the app on a tab in your defualt browser.
 
   
 ## Usage
@@ -49,8 +50,7 @@ This project is not currently open for contributions.
 
 ## Tests
 
-To run tests on this project, follow these steps:
-
+This project currently doesn't have any tests to be run.
   
 ## Project Links
   
