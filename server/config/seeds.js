@@ -15,6 +15,8 @@ db.once("open", async () => {
     { name: "SQL & NoSQL" },
     { name: "React" },
     { name: "Full Stack" },
+    { name: "Git" },
+    { name: "Python" },
   ]);
 
   console.log("categories seeded");
@@ -28,7 +30,7 @@ db.once("open", async () => {
       description: "Take the 100 Days of Code challenge! For 100 days, for just an hour a day invest in yourself by taking the time to improve your tech skills and ultimately make progress toward your goals.",
       image: "MENTALITY-coding-journal.jpg",
       category: categories[0]._id,
-      price: 15.00,
+      price: 15.0,
       quantity: 500,
     },
     {
@@ -74,7 +76,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "Cambridge IGCSE Computer Science helps learners develop an interest in computational thinking and an understanding of the principles of problem-solving using computers. They apply this understanding to create computer-based solutions to problems using algorithms and a high-level programming language. Learners also develop a range of technical skills, and the ability to effectively test and evaluate computing solutions.",
       image: "cambridge.jpg",
-      price: 33.70,
+      price: 33.7,
       quantity: 30,
     },
     {
@@ -110,7 +112,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "Is the universe actually a giant quantum computer? According to Seth Lloyd, the answer is yes. All interactions between particles in the universe, Lloyd explains, convey not only energy but also information–in other words, particles not only collide, they compute. What is the entire universe computing, ultimately? “Its own dynamical evolution,” he says. “As the computation proceeds, reality unfolds.” Programming the Universe, a wonderfully accessible book, presents an original and compelling vision of reality, revealing our world in an entirely new light.",
       image: "COMPUTER-SCIENCE-programming-the-universe.jpg",
-      price: 15.20,
+      price: 15.2,
       quantity: 1000,
     },
     {
@@ -367,7 +369,8 @@ db.once("open", async () => {
     },
     {
       name: "Full Stack React: The Complete Guide to ReactJS and Friends",
-      author: "Anthony Accomazzo, Clay Allsopp, Tyler McGinnis, Ari Lerner, David Guttman, and Nate Murray",
+      author:
+        "Anthony Accomazzo, Clay Allsopp, Tyler McGinnis, Ari Lerner, David Guttman, and Nate Murray",
       category: categories[8]._id,
       description: "What if you could master the entire framework in less time, with solid foundations, without beating your head against the wall? Imagine how quickly you can get all of your work done with the right tools and best practices. Seriously, let's stop wasting time scouring Google, searching through incorrect, out-of-date, blog posts and get everything you need to be productive in one, well-organized place, complete with both simple and complex examples to get your app up and running. You'll learn what you need to know to work professionally and build solid, well-tested, optimized apps with ReactJS. This book is your definitive guide.",
       image: "REACT-fullstack-react.jpg",
@@ -425,7 +428,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "This publication is focused on the modern Front-ends technology tools such as, HTML 5, CSS 3, Bootstrap 4, JavaScript, jQuery, GIT, GITHUB, and Version Control for Modern Web Development and Back-end technology tools such as, Node JS, Express, APIs, Embedded JavaScript (EJS), React JS, Database Fundamentals, SQL Databases, NoSQL Databases, MongoDB and Mongoose, Deployment + Authentication and Security for Modern Full-Stack Web Development.",
       image: "FULL-STACK-full-stack-web-development.jpg",
-      price: 35.00,
+      price: 35.0,
       quantity: 600,
     },
     {
@@ -434,7 +437,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Fullstack Rust: The Complete Guide to Building Apps with the Rust Programming Language and Friends. Learn to build performance-critical Rust apps. The Rust language is a way to write incredibly fast - and safe - code. Its being used to build tools at Google, Facebook, Amazon, and many other companies where performance is critical. While there are some good resources on how to learn the Rust programming language by itself, what these other books don't teach is how to build applications with Rust. Fullstack Rust solves that. In this book we show you how to use Rust to build incredibly fast web-servers, build command-line tools, and compile apps to run in the browser with Web Assembly (WASM).",
       image: "FULL-STACK-fullstack-rust.jpg",
-      price: 79.00,
+      price: 79.0,
       quantity: 600,
     },
     {
@@ -443,7 +446,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Explore what React, Node, Python, Django, TypeScript, Webpack, and Docker have to offer individually, and how they all fit together in modern app development. This updated version will show you how to build apps with React, Node.js or Django, and TypeScript, and how Webpack can be used to optimize and organize your code for deployment.",
       image: "FULL-STACK-modern-fs-development.jpg",
-      price: 38.20,
+      price: 38.2,
       quantity: 600,
     },
     {
@@ -452,11 +455,110 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Understand the technical foundations, as well as the non-programming skills needed to be a successful full stack web developer. This book reveals the reasons why a truly successful full stack developer does more than write code. You will learn the principles of the topics needed to help a developer new to agile or full stack working—UX, project management, QA, product management, and more— all from the point of view of a developer. Covering these skills alongside the fundamentals and foundations of modern web development, rather than specifics of current technologies and frameworks (which can age quickly), all programming examples are given in the context of the web as it is in 2018.",
       image: "FULL-STACK-the-fs-developer.jpg",
-      price: 41.40,
+      price: 41.4,
       quantity: 600,
     },
+    {
+      name: "Beginning Git and GitHub",
+      author: "Mariot Tsitoara",
+      category: categories[10]._id,
+      description:
+        "A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer",
+      image: "Beginning-Git-and-Github.jpeg",
+      price: 22.41,
+      quantity: 500,
+    },
+    {
+      name: "Git & GitHub the First Steps",
+      author: "David Hockley",
+      category: categories[10]._id,
+      description:
+        "Learn Git & Github with step-by-step practical examples, We see the step-by-step path that developers use to work with the essential tool that is git.",
+      image: "Git-&-GitHub-the-First-Steps.jpg",
+      price: 8.9,
+      quantity: 100,
+    },
+    {
+      name: "GitHub for Dummies",
+      author: "Sarah Guthals and Phil Haack",
+      category: categories[10]._id,
+      description:
+        "Create a repository for your coding projects, Personalize your work flow with GitHub tools and integrations, Collaborate on open source software projects",
+      image: "GitHub-for-Dummies.jpg",
+      price: 34.99,
+      quantity: 500,
+    },
+    {
+      name: "Git",
+      author: "Jameson Garner",
+      category: categories[10]._id,
+      description:
+        "Learn the basics of Git through detailed and easy to follow along screenshots. Start using Git today!This book is designed to cut academic theory to just the key concepts and focus on basics tasks in Git in order to be productive quickly. Students can expect to learn the minimum needed to start using Git in less than an hour.",
+      image: "The-Ultimate-Guide-For-Beginners-to-Learn-Git.jpg",
+      price: 17.34,
+      quantity: 200,
+    },
+    {
+      name: "Version Control With Git",
+      author: "Jon Loeliger and Matthew McCullough",
+      category: categories[10]._id,
+      description:
+        "Get up to speed on Git for tracking, branching, merging, and managing code revisions. Through a series of step-by-step tutorials, this practical guide takes you quickly from Git fundamentals to advanced techniques, and provides friendly yet rigorous advice for navigating the many functions of this open source version control system.",
+      image: "Version-Control-With-Git.jpg",
+      price: 44.99,
+      quantity: 350,
+    },
+    {
+      name: "Python Crash Course",
+      author: "Eric Matthes",
+      category: categories[11]._id,
+      description:
+        "Learn how to make your programs interactive and test your code safely before adding it to a project. You will put your new knowledge into practice by creating a Space Invaders–inspired arcade game, building a set of data visualizations with Pythons handy libraries, and deploying a simple application online.",
+      image: "Python-Crash-Course.jpg",
+      price: 30.49,
+      quantity: 300,
+    },
+    {
+      name: "Python For Data Analysis",
+      author: "Wes McKinney",
+      category: categories[11]._id,
+      description:
+        "Get complete instructions for manipulating, processing, cleaning, and crunching datasets in Python. Updated for Python 3.6, the second edition of this hands-on guide is packed with practical case studies that show you how to solve a broad set of data analysis problems effectively.",
+      image: "Python-for-Data-Analysis.jpg",
+      price: 60.81,
+      quantity: 150,
+    },
+    {
+      name: "Python for Dummies",
+      author: "Stef Maruch and Aahz Maruch",
+      category: categories[11]._id,
+      description:
+        "Python is one of the most powerful, easy-to-read programming languages around, but it does have its limitations. This general purpose, high-level language that can be extended and embedded is a smart option for many programming problems, but a poor solution to others.",
+      image: "Python-for-Dummies.jpeg",
+      price: 29.99,
+      quantity: 700,
+    },
+    {
+      name: "Python Programming for Beginners",
+      author: "Amz Press",
+      category: categories[11]._id,
+      description:
+        "Python is a programming language that has existed for over 20 years. The history of Python started in the late 1980s when its founder, Guido van Rossum, started working on it.",
+      image: "Python-Programming-for-Beginners.jpg",
+      price: 20.69,
+      quantity: 300,
+    },
+    {
+      name: "Think Python",
+      author: "Allen B. Downey",
+      category: categories[11]._id,
+      description:
+        "If you want to learn how to program, working with Python is an excellent way to start. This hands-on guide takes you through the language a step at a time, beginning with basic programming concepts before moving on to functions, recursion, data structures, and object-oriented design.",
+      image: "Think-Python.jpg",
+      price: 29.74,
+      quantity: 200,
+    },
   ]);
-
   console.log("products seeded");
 
   await User.deleteMany();
