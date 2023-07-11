@@ -92,8 +92,22 @@ header {
 header a {
   color: var(--light);
 }
-
-.category-buttons {
+.categoryBox {
+  display: flex;
+  background-color: #00adef;
+  position: sticky;
+  float: left;
+  top: 0px;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  min-height: 1240px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-top: -16px;
+  margin-right: 10px;
+}
+.categorybuttons {
   appearance: button;
   background-color: var(--secondary);
   border: solid transparent;
@@ -102,7 +116,7 @@ header a {
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -123,10 +137,10 @@ header a {
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
-  width: 33%;
+  width: 100%;
 }
 
-.category-buttons:after {
+.categorybuttons:after {
   background-clip: padding-box;
   background-color: #1cb0f6;
   border: solid transparent;
@@ -225,8 +239,8 @@ input:focus {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
