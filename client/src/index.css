@@ -212,8 +212,42 @@ button:after {
 button:hover {
   opacity: 0.8;
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
 }
+
+.logintocheckoutbtn {
+  appearance: button;
+  background-color: var(--secondary);
+  border: solid transparent;
+  border-radius: 20px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: din-round, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  overflow: visible;
+  padding: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
 
 img {
   padding-top: 10px;
