@@ -92,6 +92,7 @@ header {
 header a {
   color: var(--light);
 }
+
 .categoryBox {
   display: flex;
   background-color: #00adef;
@@ -107,6 +108,7 @@ header a {
   margin-top: -16px;
   margin-right: 10px;
 }
+
 .categorybuttons {
   appearance: button;
   background-color: var(--secondary);
@@ -212,6 +214,7 @@ img {
   padding-top: 10px;
   max-width: 90px;
 }
+
 .imagewords {
   max-width: 300px;
 }
@@ -303,9 +306,9 @@ input:focus {
 
 .indbookimg:hover {
   -webkit-transform: scale(1.1);
-	transform: scale(1.1);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
+  transform: scale(1.1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .my-2 {
@@ -351,6 +354,7 @@ input:focus {
   .card {
     width: 100%;
   }
+
   button {
     width: 80%;
   }
