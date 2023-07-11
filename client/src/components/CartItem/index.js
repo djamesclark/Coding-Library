@@ -55,11 +55,12 @@ const CartItem = ({ item }) => {
             onChange={onChange}
           />
           <span
+            className="removeitem"
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
-            ❌
+            ❌ remove item
           </span>
         </div>
       </div>
