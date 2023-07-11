@@ -245,6 +245,13 @@ input:focus {
   margin-right: auto;
 }
 
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -330,6 +337,12 @@ input:focus {
   width: 25%;
   text-align: center;
 }
+
+.history-card {
+  width: 100%;
+  text-align: center;
+}
+
 .error-text {
   color: var(--error);
 }

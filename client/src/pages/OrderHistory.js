@@ -19,6 +19,7 @@ function OrderHistory() {
 
         {user ? (
           <>
+          <div className="center-content">
             <h2>
               Order History for {user.firstName} {user.lastName}
             </h2>
@@ -29,7 +30,7 @@ function OrderHistory() {
                 </h3>
                 <div className="flex-row">
                   {order.products.map(({ _id, image, name, price }, index) => (
-                    <div key={index} className="card px-1 py-1" 
+                    <div key={index} className="history-card px-1 py-1" 
                     style={{
                       position: "relative",
                       paddingBottom: "20px",
@@ -53,6 +54,7 @@ function OrderHistory() {
                 </div>
               </div>
             ))}
+            </div>
           </>
         ) : null}
       </div>
