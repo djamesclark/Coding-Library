@@ -22,15 +22,17 @@ Welcome to Coding Library, your ultimate destination for all things coding! We a
 [![Express.js](https://img.shields.io/badge/Express.js-v4.17.1-lightgrey)](https://expressjs.com/)
 [![Heroku](https://img.shields.io/badge/Heroku-deployed-purple)](https://www.heroku.com/)
 [![React](https://img.shields.io/badge/React-v16.13.1-61DAFB)](https://react.dev/)
+[![Stripe](https://img.shields.io/badge/Stripe-v8.67.0-370140)](https://stripe.com/)
+[![GraphQL](https://img.shields.io/badge/GraphQL-v16.3.0-1E4294)](https://graphql.org/)
 
 
 ## Installation
 
 Please follow these steps to install and run the project on your local machine:
 
-1. You will need to run `npm i` to install project dependencies.
-2. Then run `npm run seed` to seed all of the products.
-3. After that run `npm run develop` to start the application and that will also open up the app on a tab in your defualt browser.
+1. Clone this repository
+2. You will need to run `npm i` in the root directory to install project dependencies.
+3. You will need to run `npm run develop` to start the application.
 
   
 ## Usage
@@ -55,7 +57,8 @@ This project is not currently open for contributions.
 
 ## Tests
 
-This project currently doesn't have any tests to be run.
+To run tests on this project, follow these steps:
+You will need to run `npm test`
   
 ## Project Links
   
