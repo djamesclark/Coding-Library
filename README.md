@@ -22,6 +22,8 @@ Welcome to Coding Library, your ultimate destination for all things coding! We a
 [![Express.js](https://img.shields.io/badge/Express.js-v4.17.1-lightgrey)](https://expressjs.com/)
 [![Heroku](https://img.shields.io/badge/Heroku-deployed-purple)](https://www.heroku.com/)
 [![React](https://img.shields.io/badge/React-v16.13.1-61DAFB)](https://react.dev/)
+[![Stripe](https://img.shields.io/badge/Stripe-v8.67.0-370140)](https://stripe.com/)
+[![GraphQL](https://img.shields.io/badge/GraphQL-v16.3.0-1E4294)](https://graphql.org/)
 
 
 ## Installation
@@ -37,10 +39,15 @@ Please follow these steps to install and run the project on your local machine:
   
 To use this project, follow these steps:
 1. Go to the site and create an account
-2. Choose a Book Category 
+   ![Screenshot 2023-07-11 185445](https://github.com/djamesclark/Coding-Library/assets/120299691/1f9c8278-29e1-4a23-ae6c-341f12ed2136)
+2. Choose a Book Category
+   ![Screenshot 2023-07-11 185338](https://github.com/djamesclark/Coding-Library/assets/120299691/66e0f6a8-31ba-4db4-96b2-5aefc53b90cd)
 3. Add any of the following books that you want to buy
+   ![Screenshot 2023-07-11 185524](https://github.com/djamesclark/Coding-Library/assets/120299691/a2bd859d-b75f-4d6e-a945-ee5214cafe8c)
 4. When your ready hit checkout 
-5. then enter your information and click the pay button 
+  ![Screenshot 2023-07-11 185738](https://github.com/djamesclark/Coding-Library/assets/120299691/31dff6e0-fd3c-497f-ab88-104b73c57405)
+5. Then enter your information and click the pay button 
+  ![Screenshot 2023-07-11 185755](https://github.com/djamesclark/Coding-Library/assets/120299691/f932005d-6418-4f11-ad65-f291588b2893)
 
 
 
@@ -52,7 +59,6 @@ This project is not currently open for contributions.
 
 To run tests on this project, follow these steps:
 You will need to run `npm test`
-
   
 ## Project Links
   
