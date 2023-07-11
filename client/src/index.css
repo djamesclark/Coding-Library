@@ -93,7 +93,23 @@ header a {
   color: var(--light);
 }
 
-.category-buttons {
+.categoryBox {
+  display: flex;
+  background-color: #00adef;
+  position: sticky;
+  float: left;
+  top: 0px;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  min-height: 1240px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-top: -16px;
+  margin-right: 10px;
+}
+
+.categorybuttons {
   appearance: button;
   background-color: var(--secondary);
   border: solid transparent;
@@ -102,7 +118,7 @@ header a {
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -123,10 +139,14 @@ header a {
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
-  width: 33%;
+  width: 100%;
 }
 
-.category-buttons:after {
+.categorybuttons:hover {
+  color: black;
+}
+
+.categorybuttons:after {
   background-clip: padding-box;
   background-color: #1cb0f6;
   border: solid transparent;
@@ -160,7 +180,6 @@ button {
   letter-spacing: 0.8px;
   line-height: 20px;
   margin: 0;
-  outline: none;
   overflow: visible;
   padding: 13px;
   text-align: center;
@@ -192,12 +211,49 @@ button:after {
 
 button:hover {
   opacity: 0.8;
+  color: black;
+  font-weight: bold;
 }
+
+.logintocheckoutbtn {
+  appearance: button;
+  background-color: var(--secondary);
+  border: solid transparent;
+  border-radius: 20px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: din-round, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  overflow: visible;
+  padding: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
 
 img {
   padding-top: 10px;
   max-width: 90px;
 }
+
 .imagewords {
   max-width: 300px;
 }
@@ -225,10 +281,17 @@ input:focus {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .flex-row {
@@ -258,6 +321,33 @@ input:focus {
 .my-1 {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* for individual books/products page */
+.addbtn {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.removebtn {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.indbookimg {
+  max-width: 300px;
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.indbookimg:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .my-2 {
@@ -289,15 +379,40 @@ input:focus {
   width: 25%;
   text-align: center;
 }
+
+.history-card {
+  width: 100%;
+  text-align: center;
+}
+
 .error-text {
   color: var(--error);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .card {
-    width: 100%;
+    width: 33.33%; /* Show 3 cards in a row */
+  }
+
+  button {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%; /* Show 2 cards in a row */
   }
   button {
-    width: 80%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%; /* Show 1 card in a row */
+  }
+  button {
+    width: 100%;
   }
 }

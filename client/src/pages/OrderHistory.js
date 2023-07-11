@@ -15,21 +15,33 @@ function OrderHistory() {
   return (
     <>
       <div className="container my-1">
-        <Link to="/">← Back to Books</Link>
+        <Link to="/" style={{color:'#00adef'}}>← Back to Books</Link>
 
         {user ? (
           <>
+          <div className="center-content">
             <h2>
               Order History for {user.firstName} {user.lastName}
             </h2>
             {user.orders.map((order) => (
               <div key={order._id} className="my-2">
-                <h3>
+                <h3 style={{color:'#00adef'}}>
                   {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                 </h3>
                 <div className="flex-row">
                   {order.products.map(({ _id, image, name, price }, index) => (
-                    <div key={index} className="card px-1 py-1">
+                    <div key={index} className="history-card px-1 py-1" 
+                    style={{
+                      position: "relative",
+                      paddingBottom: "20px",
+                      boxShadow: "2px 2px 4px grey",
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.boxShadow = "2px 2px 4px black";
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.boxShadow = "2px 2px 4px grey";
+                    }}>
                       <Link to={`/products/${_id}`}>
                         <img alt={name} src={`/images/${image}`} />
                         <p>{name}</p>
@@ -42,6 +54,7 @@ function OrderHistory() {
                 </div>
               </div>
             ))}
+            </div>
           </>
         ) : null}
       </div>
