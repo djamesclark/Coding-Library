@@ -44,7 +44,7 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo"/>
         <img src={words} alt="the coding library" className="imagewords" />
         </Link>
       </h1>
