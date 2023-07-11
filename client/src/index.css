@@ -140,6 +140,10 @@ header a {
   width: 100%;
 }
 
+.categorybuttons:hover {
+  color: black;
+}
+
 .categorybuttons:after {
   background-clip: padding-box;
   background-color: #1cb0f6;
@@ -174,7 +178,6 @@ button {
   letter-spacing: 0.8px;
   line-height: 20px;
   margin: 0;
-  outline: none;
   overflow: visible;
   padding: 13px;
   text-align: center;
@@ -206,6 +209,8 @@ button:after {
 
 button:hover {
   opacity: 0.8;
+  color: black;
+  font-weight: bolder;
 }
 
 img {
@@ -347,11 +352,29 @@ input:focus {
   color: var(--error);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .card {
-    width: 100%;
+    width: 33.33%; /* Show 3 cards in a row */
   }
   button {
-    width: 80%;
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%; /* Show 2 cards in a row */
+  }
+  button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%; /* Show 1 card in a row */
+  }
+  button {
+    width: 100%;
   }
 }
