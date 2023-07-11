@@ -85,7 +85,7 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container my-1" style={{}}>
-          <Link to="/" style={{color:'#00adef'}}>← Back to Products</Link>
+          <Link to="/" style={{color:'#00adef'}}>← Back to Books</Link>
           <br/>
 
           <img className="indbookimg"
