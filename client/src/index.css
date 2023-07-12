@@ -311,6 +311,31 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 5px;
+}
+
+.first-name {
+  padding: 3px;
+}
+
+.last-name {
+  padding: 3px;
+}
+
+.email {
+  padding: 3px;
+}
+
+.password {
+  padding: 3px;
+}
+
+.email-field {
+  padding: 3px;
+}
+
+.password-field {
+  padding: 3px;
 }
 
 .flex-row {
