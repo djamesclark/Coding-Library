@@ -30,7 +30,7 @@ db.once("open", async () => {
       description: "Take the 100 Days of Code challenge! For 100 days, for just an hour a day invest in yourself by taking the time to improve your tech skills and ultimately make progress toward your goals.",
       image: "MENTALITY-coding-journal.jpg",
       category: categories[0]._id,
-      price: 15.00,
+      price: 15.99,
       quantity: 500,
     },
     {
@@ -112,7 +112,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "Is the universe actually a giant quantum computer? According to Seth Lloyd, the answer is yes. All interactions between particles in the universe, Lloyd explains, convey not only energy but also information–in other words, particles not only collide, they compute. What is the entire universe computing, ultimately? “Its own dynamical evolution,” he says. “As the computation proceeds, reality unfolds.” Programming the Universe, a wonderfully accessible book, presents an original and compelling vision of reality, revealing our world in an entirely new light.",
       image: "COMPUTER-SCIENCE-programming-the-universe.jpg",
-      price: 15.20,
+      price: 15.29,
       quantity: 1000,
     },
     {
@@ -337,7 +337,7 @@ db.once("open", async () => {
       category: categories[7]._id,
       description: "How do we design for data when traditional design techniques cannot extend to new database technologies? In this era of big data and the Internet of Things, it is essential that we have the tools we need to understand the data coming to us faster than ever before, and to design databases and data processing systems that can adapt easily to ever-changing data schemas and ever-changing business requirements. There must be no intellectual disconnect between data and the software that manages it. It must be possible to extract meaning and knowledge from data to drive artificial intelligence applications. Novel NoSQL data organization techniques must be used side-by-side with traditional SQL databases. Are existing data modeling techniques ready for all of this?",
       image: "SQL-NOSQL-nosql-sql-data-modeling.jpg",
-      price: 22.07,
+      price: 22.97,
       quantity: 600,
     },
     {
@@ -428,7 +428,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "This publication is focused on the modern Front-ends technology tools such as, HTML 5, CSS 3, Bootstrap 4, JavaScript, jQuery, GIT, GITHUB, and Version Control for Modern Web Development and Back-end technology tools such as, Node JS, Express, APIs, Embedded JavaScript (EJS), React JS, Database Fundamentals, SQL Databases, NoSQL Databases, MongoDB and Mongoose, Deployment + Authentication and Security for Modern Full-Stack Web Development.",
       image: "FULL-STACK-full-stack-web-development.jpg",
-      price: 35.00,
+      price: 35.99,
       quantity: 600,
     },
     {
@@ -437,7 +437,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Fullstack Rust: The Complete Guide to Building Apps with the Rust Programming Language and Friends. Learn to build performance-critical Rust apps. The Rust language is a way to write incredibly fast - and safe - code. Its being used to build tools at Google, Facebook, Amazon, and many other companies where performance is critical. While there are some good resources on how to learn the Rust programming language by itself, what these other books don't teach is how to build applications with Rust. Fullstack Rust solves that. In this book we show you how to use Rust to build incredibly fast web-servers, build command-line tools, and compile apps to run in the browser with Web Assembly (WASM).",
       image: "FULL-STACK-fullstack-rust.jpg",
-      price: 79.00,
+      price: 79.99,
       quantity: 600,
     },
     {
@@ -446,7 +446,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Explore what React, Node, Python, Django, TypeScript, Webpack, and Docker have to offer individually, and how they all fit together in modern app development. This updated version will show you how to build apps with React, Node.js or Django, and TypeScript, and how Webpack can be used to optimize and organize your code for deployment.",
       image: "FULL-STACK-modern-fs-development.jpg",
-      price: 38.20,
+      price: 38.29,
       quantity: 600,
     },
     {
@@ -455,7 +455,7 @@ db.once("open", async () => {
       category: categories[9]._id,
       description: "Understand the technical foundations, as well as the non-programming skills needed to be a successful full stack web developer. This book reveals the reasons why a truly successful full stack developer does more than write code. You will learn the principles of the topics needed to help a developer new to agile or full stack working—UX, project management, QA, product management, and more— all from the point of view of a developer. Covering these skills alongside the fundamentals and foundations of modern web development, rather than specifics of current technologies and frameworks (which can age quickly), all programming examples are given in the context of the web as it is in 2018.",
       image: "FULL-STACK-the-fs-developer.jpg",
-      price: 41.40,
+      price: 41.49,
       quantity: 600,
     },
     {
@@ -475,7 +475,7 @@ db.once("open", async () => {
       description:
         "Learn Git & Github with step-by-step practical examples, We see the step-by-step path that developers use to work with the essential tool that is git.",
       image: "Git-&-GitHub-the-First-Steps.jpg",
-      price: 8.90,
+      price: 8.99,
       quantity: 100,
     },
     {
