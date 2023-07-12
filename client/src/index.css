@@ -20,6 +20,7 @@ body {
 
 .cart {
   color: var(--light);
+  
 }
 
 body {
@@ -315,6 +316,11 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex-row-cart {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .space-between {
