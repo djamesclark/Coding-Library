@@ -33,42 +33,44 @@ function Signup(props) {
   return (
     <div className="container my-1">
       <Link to="/login" style={{ color: '#00adef' }}>← Go to Login</Link>
-
-      <h2>Signup</h2>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h2>Sign Up (It's🆓!)</h2>
       <div className="center-content">
         <form onSubmit={handleFormSubmit}>
-          <div className="flex-row space-between my-2">
-            <label htmlFor="firstName">First Name:</label>
+          <div className="first-name">
+            <label htmlFor="firstName">First Name:  </label>
             <input
-              placeholder="First"
+              placeholder="First Name"
               name="firstName"
               type="firstName"
               id="firstName"
               onChange={handleChange}
             />
           </div>
-          <div className="flex-row space-between my-2">
-            <label htmlFor="lastName">Last Name:</label>
+          <div className="last-name">
+            <label htmlFor="lastName">Last Name:  </label>
             <input
-              placeholder="Last"
+              placeholder="Last Name"
               name="lastName"
               type="lastName"
               id="lastName"
               onChange={handleChange}
             />
           </div>
-          <div className="flex-row space-between my-2">
-            <label htmlFor="email">Email:</label>
+          <div className="email">
+            <label htmlFor="email">Your Email:  </label>
             <input
-              placeholder="youremail@test.com"
+              placeholder="example@email.com"
               name="email"
               type="email"
               id="email"
               onChange={handleChange}
             />
           </div>
-          <div className="flex-row space-between my-2">
-            <label htmlFor="pwd">Password:</label>
+          <div className="password">
+            <label htmlFor="pwd">Password:  </label>
             <input
               placeholder="******"
               name="password"
@@ -77,8 +79,9 @@ function Signup(props) {
               onChange={handleChange}
             />
           </div>
+          <br></br>
           <div className="button">
-            <button type="submit">Signup Now</button>
+            <button type="submit">Signup Now!</button>
           </div>
         </form>
       </div>
