@@ -113,9 +113,9 @@ header a {
 .categorybuttons {
   appearance: button;
   background-color: var(--secondary);
-  border: solid transparent;
+  border: solid 2px black; 
   border-radius: 20px;
-  border-width: 0 0 6px;
+  border-width: 0 0 1px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -128,7 +128,7 @@ header a {
   font-weight: 780;
   letter-spacing: 0.8px;
   line-height: 18px;
-  margin: 0;
+  margin: 5px 1px; 
   outline: none;
   overflow: hidden;
   padding: 18px;
@@ -141,6 +141,8 @@ header a {
   -webkit-user-select: none;
   vertical-align: middle;
   width: 100%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 1); 
+
 }
 
 .categorybuttons:hover {
